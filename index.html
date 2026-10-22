@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpiCalenDario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <!--COME SI METTE LA FAV ICON(L'ICONCINA IN CIMA ALLA PAGINA QUANDO SI APRE NEL WEB)-->
+    <link rel="icon" href="assets/img/EPICODE-pitto-color.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="module" src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <!-- nome del mese-->
+            <h1></h1>
+            <!-- caldendario -->
+            <div id="calendar"></div>
+            <!-- inserimento impegni -->
+            <h2>Add Meeting</h2>
+            <div id="addMeeting">
+                <div>
+                    <h4>Meeting Day</h4>
+                    <span id="newMeetingDay">Clicca su un giorno</span>
+                </div>
+                <!-- non do un id al form tanto ne ho solo 1 e lo intercetto-->
+                <form>
+                    <!-- dentro il form metto i div senno mi complico la vita a metterli in linea -->
+                    <div>
+                        <h4>Meeting Time</h4>
+                        <input type="time" id="newMeetingTime" required>
+                    </div>
+                    <div>
+                        <h4>Meeting Name</h4>
+                        <input type="text" id="newMeetingName" placeholder="Inserisci l'impegno" required>
+                    </div>
+                    <div>
+                        <h4>Add</h4>
+                        <button type="submit" class="disabled" disabled>Save Meeting</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- sezione impegni inseriti -->
+         <section>
+            <div id="appointments">
+                <h2>Impegni del giorno</h2>
+                <ul>
+                    <li>Primo</li>
+                </ul>
+            </div>
+         </section>
+    </div>
+</body>
+
+</html>
